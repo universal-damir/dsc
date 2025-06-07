@@ -50,18 +50,22 @@ const Header = () => {
         }`}
       >
         <div className="container mx-auto px-4 flex justify-between items-center">
-          <div className="flex items-center">
+          <button 
+            onClick={scrollToTop}
+            className="flex items-center cursor-pointer hover:opacity-80 transition-opacity"
+            aria-label="Go to home"
+          >
             <img 
               src="/DSC Logo.png" 
               alt="Dubai Services Consulting Logo" 
               className="h-12 sm:h-14"
             />
-          </div>
+          </button>
 
           {/* Desktop Nav */}
           <nav className="hidden md:block">
             <ul className="flex space-x-8">
-              {['home', 'about', 'services', 'why-us', 'contact'].map((item) => (
+              {['about', 'services', 'why-us', 'contact'].map((item) => (
                 <li key={item}>
                   <button 
                     onClick={() => scrollToSection(item)}
@@ -90,7 +94,7 @@ const Header = () => {
           }`}
         >
           <ul className="py-4 px-6 space-y-4">
-            {['home', 'about', 'services', 'why-us', 'contact'].map((item) => (
+            {['about', 'services', 'why-us', 'contact'].map((item) => (
               <li key={item}>
                 <button 
                   onClick={() => scrollToSection(item)}
