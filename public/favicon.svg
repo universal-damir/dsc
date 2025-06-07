@@ -1,0 +1,26 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Radial gradient for 3D sphere effect -->
+    <radialGradient id="sphereGradient" cx="0.3" cy="0.3" r="0.8">
+      <stop offset="0%" stop-color="#45c6e7" stop-opacity="1"/>
+      <stop offset="30%" stop-color="#068cae" stop-opacity="1"/>
+      <stop offset="70%" stop-color="#205461" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#1a4650" stop-opacity="1"/>
+    </radialGradient>
+    
+    <!-- Shadow gradient -->
+    <radialGradient id="shadowGradient" cx="0.5" cy="0.9" r="0.5">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Shadow ellipse -->
+  <ellipse cx="16" cy="28" rx="12" ry="3" fill="url(#shadowGradient)"/>
+  
+  <!-- Main sphere -->
+  <circle cx="16" cy="16" r="14" fill="url(#sphereGradient)"/>
+  
+  <!-- Highlight for 3D effect -->
+  <ellipse cx="12" cy="10" rx="4" ry="6" fill="#45c6e7" opacity="0.4"/>
+</svg> 
