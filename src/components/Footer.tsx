@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -45,6 +43,9 @@ const Footer = () => {
         
         <div className="border-t border-white/20 mt-12 pt-6 text-center text-white/60 text-sm">
           <p>&copy; {currentYear} Dubai Services Consulting. All Rights Reserved.</p>
+          <p className="text-primary-300 text-sm">
+            DSC FZCO is registered with Dubai Integrated Economic Zones with Commercial License no. 17151 since 26.05.2022.
+          </p>
         </div>
       </div>
     </footer>
